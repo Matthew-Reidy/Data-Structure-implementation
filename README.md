@@ -6,6 +6,9 @@ Now that I am a better programmer Im going to refactor this code base so that th
 
 ReWrite Goals
 -Use Object Oriented Principles
+
 -Clean readable code
+
 -Highly Maintainable for future enhancements
+
 -Refresh and practice java knowledge and programming
