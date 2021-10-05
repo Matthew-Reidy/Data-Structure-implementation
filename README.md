@@ -5,6 +5,7 @@ As a result I was designing the program in an extremely naieve way.
 Now that I am a better programmer Im going to refactor this code base so that this project can be close to a profession level of quality.
 
 ReWrite Goals
+
 -Use Object Oriented Principles
 
 -Clean readable code
