@@ -7,7 +7,7 @@ public class Cart implements dbconn {
 HashMap<String, Double> shoppingCart= new HashMap<>();
 Iterator iterator = shoppingCart.entrySet().iterator();
 
-    public int cartTotal(HashMap<String, Integer> shoppingCart){ //O(n) where n is # of values in the map
+    public int cartTotal(HashMap<String, Double> shoppingCart){ //O(n) where n is # of values in the map
     int total =0;
     for(int i : shoppingCart.values()){
          total += shoppingCart.get(i);
@@ -15,10 +15,13 @@ Iterator iterator = shoppingCart.entrySet().iterator();
     return total;
     }
 
-    public void cartContents(HashMap<String, Integer> shoppingCart, Iterator iterator){ //O(?)
+    public void cartContents(HashMap<String, Double> shoppingCart, Iterator iterator){ //O(?)
 
         while(iterator.hasNext()){
             System.out.println("cart contains" + iterator);
         }
+    }
+    public void addToMap(HashMap<String, Double> shoppingCart){
+
     }
 }
