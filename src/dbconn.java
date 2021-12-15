@@ -1,3 +1,5 @@
+import com.mysql.cj.Query;
+
 import java.sql.*;
 public interface dbconn {
     String username = "root";
@@ -18,7 +20,7 @@ public interface dbconn {
 
         return conn;
     }
-    static void getItem(Connection conn, String Productname) { //select item and put in cart
+    static Query getItem(Connection conn, String Productname) { //select item and put in cart
         String Query = "select productName, price from stock where productName = '"+ Productname +"' "  ;
         try(Statement stmt = conn.createStatement()){
              ResultSet res = stmt.executeQuery(Query);
@@ -29,6 +31,8 @@ public interface dbconn {
             System.out.println("there was a problem!");
             error.printStackTrace();
         }
+
+        return null;
     }
     static void updateColumn(Connection conn){
         String uQuery= "alter ";

@@ -9,7 +9,7 @@ Iterator iterator = shoppingCart.entrySet().iterator();
 
     public int cartTotal(HashMap<String, Double> shoppingCart){ //O(n) where n is # of values in the map
     int total =0;
-    for(int i : shoppingCart.values()){
+    for(double i : shoppingCart.values()){
          total += shoppingCart.get(i);
      }
     return total;
