@@ -12,6 +12,12 @@ public String ProductName;
      Scanner inSc = new Scanner(System.in);
      System.out.println("enter your menu selection:");
      menuSelect = inSc.nextInt();
+     ProductName = inSc.next();
+
+     Frontend inputs = new Frontend(menuSelect, ProductName);
 
     }
+ public void repeatInput(){
+
+ }
 }
